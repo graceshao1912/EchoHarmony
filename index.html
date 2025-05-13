@@ -5,13 +5,15 @@
   <title>ECHO HARMONY</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS CDN -->
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     body {
-      background: white;
-      color: white;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #ffffff;
+      color: #333;
     }
 
     .hero {
@@ -21,6 +23,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
     }
 
     .hero::before {
@@ -30,44 +33,59 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.5);
       z-index: 1;
     }
 
     .hero-content {
       z-index: 2;
-      text-align: center;
+      color: #fff;
     }
 
-    header h1 {
-      font-size: 2.5em;
+    .hero h1 {
+      font-size: 3em;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
 
-    .video-section iframe {
-      width: 100%;
-      height: 450px;
-      border: none;
+    .nav-link {
+      color: #f2c94c !important;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+
+    .nav-link:hover {
+      color: #fff !important;
+    }
+
+    h2 {
+      font-weight: 700;
+      color: #111;
+    }
+
+    .promo h2 {
+      color: #f2c94c;
     }
 
     footer {
-      background: #1a1a1a;
+      background: #111;
       padding: 20px;
-      color: #888;
-      text-align: center;
+      color: #aaa;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
   <!-- Hero Section -->
-  <div class="hero text-white">
-    <div class="hero-content text-center">
+  <div class="hero">
+    <div class="hero-content">
       <header>
-        <h1 class="mb-3">ECHO HARMONY</h1>
+        <h1 class="mb-4">ECHO HARMONY</h1>
         <nav class="nav justify-content-center">
-          <a class="nav-link text-white" href="EchoHarmonyNewsPage.html">Tour Dates</a>
-          <a class="nav-link text-white" href="EchoHarmonyMusicPage.html">Music</a>
-          <a class="nav-link text-white" href="EchoHarmonyMerchPage.html">Merch</a>
+          <a class="nav-link" href="EchoHarmonyNewsPage.html">Tour Dates</a>
+          <a class="nav-link" href="EchoHarmonyMusicPage.html">Music</a>
+          <a class="nav-link" href="EchoHarmonyMerchPage.html">Merch</a>
         </nav>
       </header>
     </div>
